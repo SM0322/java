@@ -88,7 +88,12 @@ function setJShand(){
 }
 
 let judge = winlose(user_hand, js_hand);
-alert('あなたの手は' + user_hand + 'です。相手の選んだ手は' + js_hand + 'です。結果は' + judge + 'です。');
+if (user_hand != null){
+  alert('あなたの手は' + user_hand + 'です。相手の選んだ手は' + js_hand + 'です。結果は' + judge + 'です。');
+} else {
+  alert('またチャレンジしてね')
+}
+
 
 function winlose(user, js){
   let winloseStr;
