@@ -92,10 +92,40 @@
 //   return winLoseStr;
 // }
 
-$(document).ready(function() {
-  $('body').html('<h1>Hello jQuery!!</h1>');
-});
-
-// $(document).ready(function () {
-//   // jQueryプログラムの内容
+// $(document).ready(function() {
+//   $('body').html('<h1>Hello jQuery!!</h1>');
 // });
+
+// #ｃｓｓを上書き
+// $(function(){
+//   $('.box1').css({
+//     'background-color': '#0000FF',
+//     'height': '100px'
+//   });
+// });
+
+// ＃下から上にスライド
+// $(function() {
+//   $('.box1').slideUp();
+// });
+
+// ＃消えていたのを無理やり表示
+// $(function(){
+//   $('.box1').show();
+//   $('.box1').css({'background-color': '#0000FF'});
+// });
+
+// #もともと表示されていたやつを消す
+// $(function(){
+//   $('.box1').hide();
+// });
+
+$(function() {
+  $('.box1').slideDown(function(){
+    $('.box1').css({
+      'background-color': '#0000FF',
+      'width': '200px',
+      'height': '100px'
+    }).slideUp();
+  });
+});
