@@ -120,12 +120,42 @@
 //   $('.box1').hide();
 // });
 
-$(function() {
-  $('.box1').slideDown(function(){
-    $('.box1').css({
-      'background-color': '#0000FF',
-      'width': '200px',
-      'height': '100px'
-    }).slideUp();
+// #連続アニメーション
+// $(function() {
+//   $('.box1').slideDown(function(){
+//     $('.box1').css({
+//       'background-color': '#0000FF',
+//       'width': '200px',
+//       'height': '100px'
+//     }).slideUp();
+//   });
+// });
+
+// #マウスを乗せると色が変化
+// $(function(){
+//   $('.box1').mouseover(function(){
+//     $('.box1').css({'background-color': '#0000FF'});
+//   });
+//   $('.box1').mouseout(function(){
+//     $('.box1').css({'background-color': '#FF0000'});
+//   });
+// });
+
+// #クラスの付与と削除による変化
+// $(function(){
+//   $('.box1').mouseover(function(){
+//     $('.box1').addClass('box1-ext');
+//   });
+//   $('.box1').mouseout(function(){
+//     $('.box1').removeClass('box1-ext');
+//   });
+// })
+
+$(function(){
+  $('.box1').on('click', function(){
+    $('.box1').addClass('box1-ext');
   });
-});
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box1-ext');
+  });
+})
