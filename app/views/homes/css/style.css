@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 50px 0;
+}
+.box1 {
+  height: 300px;
+  width: 600px;
+  margin: 0 auto 50px;
+  background-color: #eee;
+}
+/*#上に戻るボタンは常にページの下から20,右から20pxの位置に存在するよというcss*/
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#back img {
+  width: 50px;
+}

@@ -1,0 +1,23 @@
+// const swiper = new Swiper('.swiper', {
+//   loap: true,
+//   pagination: {
+//     el: '.swiper-pagination',
+//   },
+//   navigation: {
+//     nextEl: '.swiper-button-next',
+//     prevEl: '.swiper-button-prev',
+//   }
+// });
+
+$(function() {
+  $('#back a').on('click', function(e) {
+    // back内のaタグがクリックされたら
+    $('body, html').animate({
+      // アニメーションを付与するjQueryの関数、body htmlでbodyまたはhtml要素全てに与える
+      scrollTop:0
+      // 変化対象のプロパティ名と変化値、scropTopはスクロール位置を習得することができ、今回はページ最上部に移動する
+    }, 800);
+    // 800=800ms=0.8sでがアニメの動作時間
+    e.preventDefault();
+  });
+});
