@@ -9,15 +9,27 @@
 //   }
 // });
 
+// $(function() {
+//   $('#back a').on('click', function(e) {
+//     // back内のaタグがクリックされたら
+//     $('body, html').animate({
+//       // アニメーションを付与するjQueryの関数、body htmlでbodyまたはhtml要素全てに与える
+//       scrollTop:0
+//       // 変化対象のプロパティ名と変化値、scropTopはスクロール位置を習得することができ、今回はページ最上部に移動する
+//     }, 800);
+//     // 800=800ms=0.8sでがアニメの動作時間
+//     e.preventDefault();
+//   });
+// });
+
+// ハンバーガーメニュー
 $(function() {
-  $('#back a').on('click', function(e) {
-    // back内のaタグがクリックされたら
-    $('body, html').animate({
-      // アニメーションを付与するjQueryの関数、body htmlでbodyまたはhtml要素全てに与える
-      scrollTop:0
-      // 変化対象のプロパティ名と変化値、scropTopはスクロール位置を習得することができ、今回はページ最上部に移動する
-    }, 800);
-    // 800=800ms=0.8sでがアニメの動作時間
-    e.preventDefault();
-  });
-});
+  $('.menu-trigger').on('click', function(e) {
+    // .menu-triggerがクリックされたときに、処理が行われる
+    $(this).toggleClass("active");
+    // クリックされた要素自身にactiveクラスが追加され、もう一度クリックすると削除されます。
+    $('#sp-menu').fadeToggle();
+    // .fadeToggle()は、要素のフェードイン・フェードアウトを切り替える
+    e.preventDefault()
+  })
+})
