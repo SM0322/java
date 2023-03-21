@@ -197,3 +197,47 @@ public class hello {
     }
   }
 }
+// 乱数とswitchを活かしたおみくじ
+public class hello {
+
+  public static void main(String []args) {
+    System.out.println("あなたの運勢を占います");
+    int fortune = new java.util.Random().nextInt(4);
+    switch (fortune) {
+      case 1:
+        System.out.println("大吉");
+        break;
+      case 2:
+        System.out.println("中吉");
+        break;
+      case 3:
+        System.out.println("小吉");
+        break;
+        // default = 0
+      case 0:
+        System.out.println("凶");
+    }
+  }
+}
+// do-while(最低１回はアクションする)
+public class hello {
+
+  public static void main(String []args) {
+    int temp = 25;
+    do {
+      temp--;
+      System.out.println("温度を１度下げました" + temp);
+    } while (temp > 25);
+  }
+}
+// 1回もループしない場合あり
+public class hello {
+
+  public static void main(String []args) {
+    int temp = 25;
+    while (temp > 25) {
+      temp--;
+      System.out.println("温度を１度下げました" + temp);
+    } 
+  }
+}
