@@ -61,3 +61,13 @@ public class hello {
     System.out.println(mag);
   }
 }
+// printのみで()内を表示,printlnと違い開業しないので連続させると文がつながる
+public class hello {
+
+  public static void main(String []args) {
+    String name = "私の年齢は";
+    String message = "23歳です";
+    System.out.print(name);
+    System.out.print(message);
+  }
+}
