@@ -138,3 +138,28 @@ public class hello {
     System.out.println(1 + ":大吉 " + 2 + ":中吉 " + 3 + ":小吉 " + 4 + ":凶");
   }
 }
+
+// if文
+public class hello {
+
+  public static void main(String []args) {
+    boolean tenki = true;
+    if (tenki == true) {
+      System.out.println("選択");
+      System.out.println("散歩");
+    } else {
+      System.out.println("DVD");
+    }
+  }
+}
+// ループ文
+public class hello {
+
+  public static void main(String []args) {
+    boolean doorclose = true;
+    while (doorclose == true) {
+      System.out.println("ノックする");
+      System.out.println("１分待つ");
+    }
+  }
+}
