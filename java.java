@@ -12,3 +12,11 @@ public class hello {
       args[0], args[1], Integer.toString(sum));
   }
 }
+
+// エスケープシーケンス
+public class hello {
+
+  public static void main(String []args) {
+    System.out.println("私の好きな記号は(\")です");
+  }
+}
