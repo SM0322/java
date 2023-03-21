@@ -163,3 +163,37 @@ public class hello {
     }
   }
 }
+// ブロックの中身が１行なら{}は省略可だがお勧めしない
+public class hello {
+
+  public static void main(String []args) {
+    boolean tenki = true;
+    if (tenki == true) {
+      System.out.println("選択");
+      System.out.println("散歩");
+    } else
+      System.out.println("DVD");
+  }
+}
+// if elseがクドイかつ条件式の形式が一緒ならswitchが使える
+public class hello {
+
+  public static void main(String []args) {
+    System.out.println("あなたの運勢を占います");
+    int fortune = 0;
+    switch (fortune) {
+      case 1:
+        System.out.println("大吉");
+        break;
+      case 2:
+        System.out.println("中吉");
+        break;
+      case 3:
+        System.out.println("小吉");
+        break;
+        // default = 0
+      default:
+        System.out.println("凶");
+    }
+  }
+}
