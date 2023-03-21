@@ -90,3 +90,20 @@ public class hello {
     System.out.println("穴阿多は来年" + (n + 1) +"際になるね");
   }
 }
+// 乱数生成()数字が上限
+public class hello {
+
+  public static void main(String []args) {
+    int r = new java.util.Random().nextInt(90);
+    System.out.println(r);
+  }
+}
+// ターミナル上で文字列と整数の入力を受け付ける
+public class hello {
+
+  public static void main(String []args) {
+    String name = new java.util.Scanner(System.in).nextLine();
+    int age = new java.util.Scanner(System.in).nextInt();
+    System.out.println(name + age);
+  }
+}
