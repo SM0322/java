@@ -81,3 +81,12 @@ public class hello {
     System.out.println(m);
   }
 }
+// Integer.parseInt()で整数として読める文字列をinteger型に変換
+public class hello {
+
+  public static void main(String []args) {
+    String age = "31";
+    int n = Integer.parseInt(age);
+    System.out.println("穴阿多は来年" + (n + 1) +"際になるね");
+  }
+}
