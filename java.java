@@ -20,3 +20,25 @@ public class hello {
     System.out.println("私の好きな記号は(\")です");
   }
 }
+
+// 演算子
+public class hello {
+
+  public static void main(String []args) {
+    int a;
+    a = 100;
+    a++;
+    System.out.println(a);
+  }
+}
+
+// a=61 b=60となる。bはbに50＋された値が表示され、そのあと１＋されるという順になってるから
+public class hello {
+
+  public static void main(String []args) {
+    int a = 10;
+    int b = 10;
+    System.out.println(++a + 50);
+    System.out.println(b++ + 50);
+  }
+}
