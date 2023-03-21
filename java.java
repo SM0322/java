@@ -107,3 +107,34 @@ public class hello {
     System.out.println(name + age);
   }
 }
+
+public class hello {
+
+  public static void main(String []args) {
+    String name = new java.util.Scanner(System.in).nextLine();
+    int x = 5;
+    int y = 10;
+    String ans = "x+yは" + (x + y);
+    System.out.println(ans);}
+}
+// 占いゲーム
+public class hello {
+
+  public static void main(String []args) {
+    String welcome = "ようこそ占いの館へ";
+    System.out.println(welcome);
+    String nameInput = "あなたの名前を入力してください";
+    System.out.println(nameInput);
+    String name = new java.util.Scanner(System.in).nextLine();
+    String ageInput = "あなたの年齢を入力してください";
+    System.out.println(ageInput);
+    String ageString = new java.util.Scanner(System.in).nextLine();
+    int age = Integer.parseInt(ageString);
+    int fortune = new java.util.Random().nextInt(3);
+    fortune++;
+    String resultOutput = "占い結果が出ました";
+    System.out.println(resultOutput);
+    System.out.println(age + "歳の" + name + "さん、あなたの運記番号は" + fortune + "です");
+    System.out.println(1 + ":大吉 " + 2 + ":中吉 " + 3 + ":小吉 " + 4 + ":凶");
+  }
+}
