@@ -42,3 +42,22 @@ public class hello {
     System.out.println(b++ + 50);
   }
 }
+
+// 型の自動変換
+public class hello {
+
+  public static void main(String []args) {
+    double d = 8.5 / 2;
+    long l = 5 + 2L;
+    System.out.println(d);
+    System.out.println(l);
+  }
+}
+// 23がstringかたint形に自動変換されてる
+public class hello {
+
+  public static void main(String []args) {
+    String mag = "私の年齢は" + 23;
+    System.out.println(mag);
+  }
+}
