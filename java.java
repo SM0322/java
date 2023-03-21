@@ -261,3 +261,25 @@ public class hello {
     }
   }
 }
+// breakで繰り返しをすぐに中断
+public class hello {
+  public static void main(String []args) {
+    for (int i = 1; i < 10; i++) {
+      if (i == 3) {
+        break;
+      }
+      System.out.println(i);
+    }
+  }
+}
+// continueでその集会のみスキップ
+public class hello {
+  public static void main(String []args) {
+    for (int i = 1; i < 10; i++) {
+      if (i == 3) {
+        continue;
+      }
+      System.out.println(i);
+    }
+  }
+}
