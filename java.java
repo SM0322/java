@@ -393,3 +393,15 @@ public class hello {
     System.out.println(num);
   }
 }
+// 配列を利用した平均値計算
+public class hello {
+  public static void main(String []args) {
+    int [] scores1 = new int[] {20, 30, 40, 50, 80};
+    int num = scores1.length;
+    int sum = scores1[0] + scores1[1] + scores1[2] + scores1[3] + scores1[4];
+    int average = sum / scores1.length;
+    System.out.println(sum);
+    System.out.println(average);
+    System.out.println(num);
+  }
+}
