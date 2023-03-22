@@ -414,3 +414,17 @@ public class hello {
     }
   }
 }
+
+// 配列利用の平均値計算
+public class hello {
+  public static void main(String []args) {
+    int [] scores = new int[] {20, 30, 40, 50, 80};
+    int sum = 0;
+    for (int i = 0; i < scores.length; i++) {
+      sum += scores[i];
+    }
+    int average = sum / scores.length;
+    System.out.println(sum);
+    System.out.println(average);
+  }
+}
