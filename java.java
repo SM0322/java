@@ -351,3 +351,18 @@ public class hello {
     System.out.println("ゲームを終了します");
   }
 }
+// 平均点
+public class hello {
+  public static void main(String []args) {
+    int sansu = 20;
+    int kokugo = 30;
+    int rika = 40;
+    int eigo = 80;
+    int syakai = 50;
+    
+    int sum = sansu + kokugo + rika + eigo + syakai;
+    int average = sum / 5;
+    System.out.println(sum);
+    System.out.println(average);
+  }
+}
