@@ -405,3 +405,12 @@ public class hello {
     System.out.println(num);
   }
 }
+// 配列の値をforですべて表示
+public class hello {
+  public static void main(String []args) {
+    int [] scores = new int[] {20, 30, 40, 50, 80};
+    for (int i = 0; i < scores.length; i++) {
+      System.out.println(scores[i]);
+    }
+  }
+}
