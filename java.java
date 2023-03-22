@@ -483,3 +483,39 @@ public class hello {
     System.out.println(scores[0].length);
   }
 }
+// 4-1
+public class hello {
+  public static void main(String []args) {
+    int [] points = new int[4];
+    double [] weights = new double[5];
+    boolean [] answers = new boolean[3];
+    String [] namew = new String[3];
+  }
+}
+// 4-2
+public class hello {
+  public static void main(String []args) {
+    int [] moneyLists = {121902, 8302, 55100};
+    for (int value : moneyLists) {
+      System.out.println(value);
+    }
+    for (int i = 0; i < moneyLists.length; i++) {
+      System.out.println(moneyLists[i]);
+    }
+  }
+}
+// 4-4
+public class hello {
+  public static void main(String []args) {
+    int [] numbers = {3, 4, 9};
+    System.out.println("１桁の数字を入力してください");
+    int input = new java.util.Scanner(System.in).nextInt();
+    for (int i = 0; i < numbers.length; i++) {
+      if (numbers[i] == input) {
+        System.out.println("アタリ");
+      } else {
+        System.out.println("ハズレ");
+      }
+    }
+  }
+}
