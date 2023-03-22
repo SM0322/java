@@ -475,3 +475,11 @@ public class hello {
     }
   }
 }
+// た構造の配列
+public class hello {
+  public static void main(String []args) {
+    int [] [] scores = {{20, 30, 40}, {10, 50, 80}};
+    System.out.println(scores.length);
+    System.out.println(scores[0].length);
+  }
+}
