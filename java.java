@@ -441,3 +441,28 @@ public class hello {
     System.out.println(count);
   }
 }
+// for switch 乱数の組み合わせ
+public class hello {
+  public static void main(String []args) {
+    int [] seq = new int[10];
+    for (int i = 0; i < seq.length; i++) {
+      seq[i] = new java.util.Random().nextInt(4);
+    }
+    for (int i = 0; i < seq.length; i++) {
+      switch (seq[i]) {
+        case 0:
+          System.out.println("A");
+          break;
+        case 1:
+          System.out.println("B");
+          break;
+        case 2:
+          System.out.println("C");
+          break;
+        case 3:
+          System.out.println("D");
+          break;
+      }
+    }
+  }
+}
