@@ -384,3 +384,12 @@ public class hello {
     System.out.println(num);
   }
 }
+// 配列に数値を入力
+public class hello {
+  public static void main(String []args) {
+    int [] scores = new int[] {20, 30, 40, 50, 80};
+    int num = scores.length;
+    System.out.println(scores[3]);
+    System.out.println(num);
+  }
+}
