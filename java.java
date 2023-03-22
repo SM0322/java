@@ -366,3 +366,21 @@ public class hello {
     System.out.println(average);
   }
 }
+// 配列の宣言
+public class hello {
+  public static void main(String []args) {
+    int sansu = 20;
+    int kokugo = 30;
+    int rika = 40;
+    int eigo = 80;
+    int syakai = 50;
+    int [] scores = new int[5];
+    int num = scores.length;
+    
+    int sum = sansu + kokugo + rika + eigo + syakai;
+    int average = sum / 5;
+    System.out.println(sum);
+    System.out.println(average);
+    System.out.println(num);
+  }
+}
