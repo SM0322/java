@@ -568,3 +568,16 @@ public class Main {
     System.out.println(x + y);
   }
 }
+// 変数のスコープによるエラー確認
+public class Main {
+  public static void main(String []args) {
+    System.out.println("メソッドを呼び出す");
+    int x = 100;
+    int y = 20;
+    add();
+    System.out.println("メソッドを呼び出しました");
+  }
+  public static void add() {
+    System.out.println(x + y);
+  }
+}
