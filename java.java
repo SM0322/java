@@ -543,3 +543,28 @@ public class Main {
     methodA();
   }
 }
+// メソッドと引数の組み合わせ
+public class Main {
+  public static void main(String []args) {
+    System.out.println("メソッドを呼び出す");
+    hello("A");
+    hello("B");
+    hello("C");
+    System.out.println("メソッドを呼び出しました");
+  }
+  public static void hello(String name) {
+    System.out.println(name + "さんこんにちは");
+  }
+}
+// 複数の引数の渡し方
+public class Main {
+  public static void main(String []args) {
+    System.out.println("メソッドを呼び出す");
+    add(100, 20);
+    add(200, 50);
+    System.out.println("メソッドを呼び出しました");
+  }
+  public static void add(int x, int y) {
+    System.out.println(x + y);
+  }
+}
