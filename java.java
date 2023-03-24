@@ -629,3 +629,16 @@ public class Main {
     System.out.println(add("Hello", "World"));
   }
 }
+// 引数の数や型によってメソッドを判断している
+public class Main {
+  public static int add(int x, int y) {
+    return x + y;
+  }
+  public static int add(int x, int y, int z) {
+    return x + y + z;
+  }
+  public static void main(String []args) {
+    System.out.println(add(10, 20));
+    System.out.println(add(4, 20, 5));
+  }
+}
