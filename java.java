@@ -682,3 +682,19 @@ public class Main {
     }
   }
 }
+// 3列の配列を作り、そこにforの繰り返し数iを代入し戻り値として返す。その結果をすべて表示
+public class Main {
+  public static int[] printArray(int size) {
+   int[] newArray = new int[size];
+   for (int i = 0; i < newArray.length; i++) {
+     newArray[i] = i;
+   }
+   return newArray;
+  }
+  public static void main(String []args) {
+    int[] array = printArray(3);
+    for (int i : array) {
+      System.out.println(i);
+    }
+  }
+}
