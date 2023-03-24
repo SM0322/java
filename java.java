@@ -698,3 +698,57 @@ public class Main {
     }
   }
 }
+// 5-1
+public class Main {
+  public static void introduceOneself() {
+    String name = "宮迫";
+    int age = 25;
+    double toll = 180.8;
+    String eto = "牛";
+    System.out.println("私の名前は" + name + "です。年齢は" + age +",身長は" + toll + "です。干支は" + eto + "になります。");
+  }
+  public static void main(String []args) {
+    introduceOneself();
+  }
+}
+// 5-2
+public class Main {
+  public static void email(String title, String address, String text) {
+    System.out.println(address + "に、以下のメールを送信しました。");
+    System.out.println("件名:" + title);
+    System.out.println("本文:" + text);
+  }
+  public static void main(String []args) {
+    email("内定", "kaizer", "内定おめでとうございます");
+  }
+}
+// 5-3
+public class Main {
+  public static void email(String title, String address, String text) {
+    System.out.println(address + "に、以下のメールを送信しました。");
+    System.out.println("件名:" + title);
+    System.out.println("本文:" + text);
+  }
+  public static void email(String address, String text) {
+    System.out.println(address + "に、以下のメールを送信しました。");
+    System.out.println("件名: 無題");
+    System.out.println("本文:" + text);
+  }
+  public static void main(String []args) {
+    email("内定", "kaizer", "内定おめでとうございます");
+    email("kaizer", "内定おめでとうございます");
+  }
+}
+// 5-4
+public class Main {
+  public static double calcTriangleArea(double bottom, double height) {
+    return bottom * height / 2;
+  }
+  public static double calcCircleArea(double radius) {
+    return radius * radius * 3.14;
+  }
+  public static void main(String []args) {
+    System.out.println(calcTriangleArea(10.0, 20.0));
+    System.out.println(calcCircleArea(10.0));
+  }
+}
