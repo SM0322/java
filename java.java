@@ -612,3 +612,20 @@ public class Main {
     System.out.println(add(add(10, 20), add(30, 40)));
   }
 }
+// 同じ名前で定義(オーバーロード)した時の挙動
+public class Main {
+  public static int add(int x, int y) {
+    return x + y;
+  }
+  public static double add(double x, double y) {
+    return x + y;
+  }
+  public static String add(String x, String y) {
+    return x + y;
+  }
+  public static void main(String []args) {
+    System.out.println(add(10, 20));
+    System.out.println(add(4.3, 20.4));
+    System.out.println(add("Hello", "World"));
+  }
+}
