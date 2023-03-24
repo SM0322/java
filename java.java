@@ -654,3 +654,31 @@ public class Main {
     printArray(array);
   }
 }
+// arrayの要素にすべて+1してそれをすべて表示
+public class Main {
+  public static void printArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+      array[i]++;
+    }
+  }
+  public static void main(String []args) {
+    int[] array = {1, 2, 3};
+    printArray(array);
+    for (int i : array) {
+      System.out.println(i);
+    }
+  }
+}public class Main {
+  public static void printArray(int[] array) {
+    for (int i = 0; i < array.length; i++) {
+      array[i]++;
+    }
+  }
+  public static void main(String []args) {
+    int[] array = {1, 2, 3};
+    printArray(array);
+    for (int i : array) {
+      System.out.println(i);
+    }
+  }
+}
