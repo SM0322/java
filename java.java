@@ -642,3 +642,15 @@ public class Main {
     System.out.println(add(4, 20, 5));
   }
 }
+// 配列を引数にする
+public class Main {
+  public static void printArray(int[] array) {
+    for (int element : array) {
+      System.out.println(element);
+    }
+  }
+  public static void main(String []args) {
+    int[] array = {1, 2, 3};
+    printArray(array);
+  }
+}
