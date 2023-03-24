@@ -581,3 +581,14 @@ public class Main {
     System.out.println(x + y);
   }
 }
+// mainメソッドでx=100 y=20を引数として渡し、addメソッドが動く。計算結果のansが戻り値として戻り、結果が表示される
+public class Main {
+  public static int add(int x, int y) {
+    int ans = x + y;
+    return ans;
+  }
+  public static void main(String []args) {
+    int ans = add(100, 20);
+    System.out.println("100+10=" + ans);
+  }
+}
